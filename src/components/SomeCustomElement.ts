@@ -1,5 +1,6 @@
 export interface SomeCustomElementEventMap extends HTMLElementEventMap {
   "some-event": CustomEvent;
+  // imagine more of these event type, so it might be untenable or ugly to explicitly forward each one through the wrapper
 }
 
 export class SomeCustomElement extends HTMLElement {
